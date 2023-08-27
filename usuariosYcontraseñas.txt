@@ -1,0 +1,24 @@
+Usuarios        Contraseñas
+*alejandra	alejandra
+alejandro	alejandro	
+ana		ana
+angel		angel
+*antonia		antonia	
+borja		borja	
+cristiano	cristiano	
+daniel		daniel	
+david		david
+estefania	estefania
+gonzalo		gonzalo
+*guillermo	guillermo
+ivan		ivan	
+juan		juan
+manuel		manuel
+naiara		naiara	
+narcisa		narcisa
+*pablo		pablo
+paula		paula
+rosario		rosario
+*valentina	valentina
+
+*Los usuarios con asterisco son los que contienen datos en la app

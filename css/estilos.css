@@ -1,0 +1,490 @@
+/*-------------------------------------------------------CSS COMUN------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center !important;
+  margin-top: 2% !important;
+  font-weight: bold !important;
+}
+
+:root {
+  --blanco: white;
+  --color_gris: #3d3c3c;
+  --color_rojo: #ff102d;
+  --color_grisClaro: #808080;
+}
+
+.color_blanco {
+  color: var(--blanco);
+}
+.color_gris {
+  color: var(--color_gris);
+}
+.color_rojo {
+  color: var(--color_rojo);
+}
+.color_grisClaro {
+  color: var(--color_grisClaro);
+}
+
+/*--------------------------------------------------------INDEX------------------------------------------------------------------------*/
+/*Cabecera*/
+.info {
+  background-color: var(--color_gris);
+  color: var(--white);
+  padding: 0.5% 0 0.5% 0;
+  height: 5%;
+}
+.enlace_hover a {
+  text-decoration: none;
+  color: var(--white);
+}
+.enlace_hover a:hover {
+  color: var(--color_rojo);
+}
+/*Menu*/
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+.cuenta {
+  color: var(--white) !important;
+  background-color: var(--color_rojo);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+/*Slider*/
+.fondoTransparente {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+}
+.fluid-carousel .carousel-item {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.fluid-carousel .carousel-item:nth-child(1) {
+  background-image: url(../img/deportivos.jpg);
+}
+.fluid-carousel .carousel-item:nth-child(2) {
+  background-image: url(../img/clasicos.jpg);
+}
+.fluid-carousel .carousel-item:nth-child(3) {
+  background-image: url(../img/todoterrenos.jpg);
+}
+.carousel-item h2 {
+  margin-bottom: 30px;
+}
+.color {
+  color: var(--white);
+}
+.boton {
+  color: var(--white);
+  font-size: 24px;
+  background-color: var(--color_rojo);
+  border: 1px solid var(--color_rojo);
+  padding: 7px;
+}
+.boton:hover {
+  color: var(--color_rojo);
+  background-color: transparent;
+  border: 1px solid var(--color_rojo);
+  text-decoration: none;
+}
+
+.logo_principal {
+  max-width: 40% !important;
+}
+.logo_principal img {
+  width: 30% !important;
+}
+
+/*CARDS*/
+.card {
+  margin-bottom: 8%;
+}
+.h1_texto {
+  color: var(--white);
+  text-align: center;
+}
+.cuerpo_web {
+  margin-top: 2%;
+}
+.card-header {
+  background-color: var(--color_gris) !important;
+  color: var(--white);
+}
+.card-footer {
+  background-color: var(--color_gris) !important;
+}
+
+@media only screen and (min-width: 576px) {
+  .imagen_coche {
+    max-height: 169px !important;
+  }
+}
+
+/*SERVICIOS*/
+
+.servicios {
+  padding: 1% 0 1% 0;
+  margin-top: 4%;
+}
+.servicios h2 {
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+.servicios img {
+  margin: auto;
+  display: block;
+}
+.servicios h5,
+p {
+  text-align: center;
+  margin: 2%;
+}
+.espacio {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen_servicios img{
+    width: 100% !important;
+}
+
+.margen {
+  margin-top: 1% !important;
+}
+.margen p,
+h5 {
+  padding: 2% !important;
+}
+.margen img {
+  height: 100% !important;
+  width: 100% !important;
+}
+.iconos_servicios {
+  width: 7%;
+  margin: 3% auto;
+}
+@media only screen and (max-width: 992px) {
+  .imagen_servicios {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .margen {
+    margin: 0% !important;
+  }
+}
+
+.fondo_servicios {
+  background-color: var(--color_rojo);
+  color: var(--white);
+}
+
+/*MARCAS*/
+.marcas {
+  margin-top: 4%;
+}
+.marcas h2 {
+  text-align: center;
+  /* margin: 2% 0 2% 0; */
+  margin-bottom: 2%;
+}
+.logo img {
+  width: 95%;
+  height: 80%;
+  border: black solid 1px;
+}
+
+/*FOOTER*/
+
+.copyrights {
+  margin-top: 25px;
+  background: black;
+  width: 100%;
+}
+
+footer.container-fluid.text-center.foot {
+  background: black;
+  position: -webkit-sticky; /* Safari */
+  position: relative;
+  width: 100%;
+}
+
+.dark-line {
+  border-top: 1px solid #525252;
+}
+
+.white-txt {
+  color: var(--white);
+}
+
+#iconos {
+  font-size: 2em;
+  padding: 0 !important;
+  border: 0 !important;
+}
+#iconos a {
+  color: var(--color_rojo);
+}
+#iconos a:hover {
+  color: var(--white);
+}
+
+a.link {
+  color: var(--color_rojo);
+  /* border: 1px var(--color_rojo) solid; */
+  padding: 5px;
+  text-decoration: none;
+}
+a.link:hover {
+  background-color: var(--color_rojo);
+  color: var(--white);
+}
+
+/*---------------------------------------------------------------NOSOTROS------------------------------------------------------------------------*/
+/*BANNER*/
+.banner {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100% !important;
+}
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+.nosotros {
+  margin-top: 2%;
+}
+
+/*EQUIPO*/
+.nuestro_equipo {
+  margin-top: 2%;
+}
+.alineacion_equipo {
+  text-align: left;
+}
+@media only screen and (max-width: 576px) {
+  .equipo img {
+    display: flex !important;
+    justify-content: center !important;
+    padding-left: 10%;
+    margin-top: 2%;
+  }
+  .alineacion_equipo {
+    text-align: center;
+  }
+  /* iframe {
+    margin-top: 5%;
+    width: 100% !important;
+  } */
+}
+
+/*CONTACTA*/
+.contacta {
+  margin-top: 2%;
+}
+.separador {
+  width: 60%;
+  margin: 2% auto;
+}
+
+.formu_contacta {
+  border: 1px #d9d9d9 solid;
+  padding: 5% 5% 18% 5%;
+  background-color: var(--color_gris);
+  margin-bottom: 4%;
+}
+.contacta {
+  margin-top: 2%;
+}
+.icono_nosotros{
+  margin-top: 4%;
+}
+/*---------------------------------------------------------------NOTICIAS------------------------------------------------------------------------*/
+.noticias {
+  margin-top: 2%;
+}
+.alineacion_noticias {
+  text-align: start !important;
+  padding-left: 2%;
+}
+.alineacion_boton {
+  margin-left: 4%;
+}
+.separador_noticias {
+  width: 90%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 576px) {
+  .alineacion_noticias {
+    margin-top: 5% !important;
+  }
+}
+/*---------------------------------------------------------------EVENTOS------------------------------------------------------------------------*/
+.alineacion_eventos {
+  text-align: center !important;
+}
+/*---------------------------------------------------------------CUENTA------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------ALQUILAR COCHE------------------------------------------------------------------------*/
+.alquilar {
+  margin-top: 2%;
+}
+@media only screen and (min-width: 1200px) {
+  .centrar_coche {
+    margin-left: 100px !important;
+  }
+}
+
+.iconos_coche {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 20px;
+}
+.icons_words {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color_rojo);
+}
+.descrip {
+  text-align: left;
+  padding: 0 7%;
+}
+.alquilar_coche {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+.boton_alquilar {
+  color: var(--white);
+  font-size: 30px;
+  background-color: var(--color_rojo);
+  border: 1px solid var(--color_rojo);
+  padding: 12px;
+}
+.boton_alquilar:hover {
+  color: var(--color_rojo);
+  background-color: transparent;
+  border: 1px solid var(--color_rojo);
+  text-decoration: none;
+}
+@media only screen and (max-width: 576px) {
+  .boton_alquilar,
+  .descrip {
+    margin-top: 10%;
+  }
+  .icons_words {
+    display: block;
+    margin-top: 1%;
+  }
+  .iconos_coche{
+    display: block;
+  }
+}
+.mensaje {
+  margin-top: 20%;
+  padding: 5%;
+}
+.mensaje_alquilado {
+  margin-top: 1% !important;
+}
+/*---------------------------------------MENU ADMIN---------------------------------*/
+.menu_admin {
+  color: var(--white) !important;
+}
+.menu_admin:hover {
+  color: var(--color_rojo) !important;
+}
+.salir {
+  background-color: #ffc107;
+  border: 1px solid #ffc107;
+  font-weight: bold;
+}
+/*---------------------------------------Clientes---------------------------------*/
+.boton_submenu {
+  background-color: var(--color_rojo);
+}
+.boton_submenu a {
+  background-color: var(--color_rojo);
+  color: var(--white) !important;
+  text-decoration: none !important;
+}
+.boton_submenu:hover {
+  background-color: var(--color_rojo) !important;
+  border: var(--color_rojo) 1px solid !important;
+  color: black !important;
+}
+.boton_submenu a:hover {
+  color: black !important;
+  background-color: var(--color_rojo) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+.enlace_submenu {
+  color: var(--color_gris) !important;
+}
+.tamaño_tabla {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.cabecera_tabla {
+  background-color: var(--color_gris);
+  color: var(--white);
+}
+/*Buscar_cliente*/
+.caja_formu {
+  margin-top: 5%;
+}
+
+.buscar_tabla {
+  width: 50%;
+  margin: 0 auto;
+}
+/*---------------------------------------Mis reservas----------------------------*/
+.imagen_eventos {
+  max-width: 60% !important;
+}
+.imagen_noticias {
+  max-width: 60% !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    display: none;
+  }
+}
